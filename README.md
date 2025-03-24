@@ -31,12 +31,6 @@ In case of preemptive scheduling (SRTF, Priority, or Round Robin), the scheduler
 Step 4: Gantt Chart Generation A Gantt chart is dynamically created, showing when each process starts and ends.
 This provides a visual representation of process execution.
 
-Example Gantt Chart for Round Robin (Quantum = 4):
-| P1 | P2 | P3 | P1 | P2 | P3 |
----------------------------------
-0    4    8    12   16   20   24
-Each process gets CPU time based on the scheduling rules.
-
 Step 5: Performance Metrics Calculation The simulator computes the following performance metrics:
 Turnaround Time (TAT): TAT=CompletionTime−ArrivalTime Measures how long each process takes from arrival to completion.
 Waiting Time (WT): WT=TurnaroundTime−BurstTime Measures the total time a process spends waiting in the ready queue.
